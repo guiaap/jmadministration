@@ -575,7 +575,7 @@ header {
 }
 
 .preview {
-    height: 30rem;
+    height: 31rem;
     width: 28rem;
     overflow: hidden;
     border-radius: 1rem;
@@ -622,6 +622,8 @@ header {
 
 .preview-link {
     display: inline-block;
+    margin: auto;
+    margin-top: 1rem;
     padding: 0.5rem;
     background-color: var(--medium-blue);
     text-decoration: none;text-decoration: none;
