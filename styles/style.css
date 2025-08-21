@@ -239,6 +239,7 @@ header {
 
     .home-content-container p {
         font-size: 1.5rem;
+        text-align: left;
     }
 
     .home-content-container a {
@@ -304,14 +305,14 @@ header {
 
 .sobre-text-container p {
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: justify;
 }
 
 @media (max-width: 620px) {
 
     #sobre {
-        padding-bottom: 15rem;
+
     }
 
     .sobre-text-container {
@@ -319,9 +320,28 @@ header {
         max-width: 90%;
         padding: 1rem;
     }
+
+    .sobre-text-container h2 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-text-container p {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .sobre-image-container {
+        height: 18rem;
+        width: 18rem;
+    }
 }
 
 @media (max-width: 900px) {
+
+    #sobre {
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
 
     .sobre-content-container {
         flex-direction: column;
@@ -503,10 +523,19 @@ header {
     }
 
     .diferentials-container {
-        top: -12rem;
-        flex-direction: column;
+        top: -8rem;
+        flex-wrap: wrap;
         height: auto;
-        width: 30rem;
+        width: 25rem;
+    }
+
+    .diferential img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .diferential p {
+        font-size: 1.4rem;
     }
 }
 
@@ -839,12 +868,14 @@ address ul li span {
     }
 
     .footer-whatsapp-button {
+        margin: auto;
         margin-top: 2rem;
     }
 
     .credits {
         margin-top: 4rem;
         flex-direction: column;
+        gap: 1rem;
     }
 
 }
