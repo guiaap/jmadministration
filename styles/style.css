@@ -239,7 +239,7 @@ header {
 
     .home-content-container p {
         font-size: 1.5rem;
-        text-align: left;
+        text-align: justify;
     }
 
     .home-content-container a {
@@ -327,7 +327,7 @@ header {
 
     .sobre-text-container p {
         font-size: 1.5rem;
-        text-align: left;
+        text-align: justify;
     }
 
     .sobre-image-container {
