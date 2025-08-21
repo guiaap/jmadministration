@@ -96,6 +96,11 @@ header {
         background-color: var(--soft-gray);
     }
 
+    .logo {
+        height: 5;
+        width: 18rem;
+    }
+
     .nav-list {
         position: absolute;
         top: 7rem;
