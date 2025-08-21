@@ -1011,7 +1011,7 @@ address ul li span {
 }
 
 .post-text-container ul, ol {
-    padding: 0rem 3rem;
+    padding: 0rem 1rem 0rem 3rem;
 }
 
 .post-text-container ul li {
