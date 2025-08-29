@@ -285,7 +285,7 @@ header {
 }
 
 .sobre-text-container {
-    max-width: 60rem;
+    max-width: 70rem;
     padding: 2rem;
     border-left: 1px solid var(--dark-blue);
     border-bottom: 1px solid var(--dark-blue);
@@ -307,6 +307,17 @@ header {
     margin-top: 1rem;
     font-size: 1.7rem;
     text-align: justify;
+}
+
+.sobre-text-container h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.sobre-text-container ul {
+    margin-top: 0.5rem;
+    padding-left: 3rem;
+    font-size: 1.7rem;
 }
 
 @media (max-width: 620px) {
@@ -482,7 +493,7 @@ header {
 .card-full-content {
     position: absolute;
     top: 15.5rem;
-    z-index: 1000;
+    z-index: 100;
     display: none;
     flex-direction: column;
     align-items: center;
