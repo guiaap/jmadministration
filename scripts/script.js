@@ -47,3 +47,17 @@ document.querySelectorAll(".card .card-button").forEach(button => {
     });
 });
 
+const observerSections = document.querySelectorAll('#home, #sobre, #servicos, #blog');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+observerSections.forEach(section => observer.observe(section));
+

@@ -322,10 +322,6 @@ header {
 
 @media (max-width: 620px) {
 
-    #sobre {
-
-    }
-
     .sobre-text-container {
         width: auto;
         max-width: 90%;
@@ -339,6 +335,14 @@ header {
     .sobre-text-container p {
         font-size: 1.5rem;
         text-align: justify;
+    }
+
+    .sobre-text-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-text-container ul {
+        font-size: 1.5rem;
     }
 
     .sobre-image-container {
@@ -375,6 +379,7 @@ header {
     padding-top: 7rem;
     padding-bottom: 3rem;
     background-image: linear-gradient(120deg, var(--soft-gray), var(--soft-blue));
+    z-index: 900;
 }
 
 .diferentials-container {
@@ -493,7 +498,7 @@ header {
 .card-full-content {
     position: absolute;
     top: 15.5rem;
-    z-index: 100;
+    z-index: 1000;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -586,7 +591,9 @@ header {
 }
 
 .preview {
-    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    height: 34rem;
     width: 28rem;
     overflow: hidden;
     border-radius: 1rem;
@@ -595,7 +602,7 @@ header {
 }
 
 .preview-image {
-    height: 15rem;
+    height: 40%;
     width: 100%;
     object-fit: cover;
 }
@@ -603,8 +610,10 @@ header {
 .preview-text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;    
+    align-items: left;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 60%;
     width: 100%;
     padding: 1rem;
 }
@@ -632,13 +641,12 @@ header {
 }
 
 .preview-link {
-    display: inline-block;
-    margin: auto;
     margin-top: 1rem;
     padding: 0.5rem;
     background-color: var(--medium-blue);
     text-decoration: none;text-decoration: none;
     color: #FFF;
+    text-align: center;
     font-weight: 500;
     border: 1px solid var(--medium-blue);
     border-radius: 1rem;
@@ -833,6 +841,7 @@ address ul li span {
 
 .whatsapp-button {
     position: fixed;
+    z-index: 1000;
     right: 3rem;
     bottom: 2rem;
     height: 5rem;
@@ -918,6 +927,8 @@ address ul li span {
 .post-main-title h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    max-width: 90%;
+    margin: auto;
 }
 
 .post-main-title hr {
@@ -1016,9 +1027,17 @@ address ul li span {
     font-size: 1.6rem;
 }
 
+.post-text-container h2 {
+    font-size: 1.8rem;
+}
+
 .post-text-container p {
     margin: 2rem 0rem;
     text-align: justify;
+}
+
+.individual-ul {
+    margin: 2rem 0rem;
 }
 
 .post-text-container ul, ol {
@@ -1080,6 +1099,17 @@ address ul li span {
         width: 100%;
     }
 
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
