@@ -1,0 +1,24 @@
+
+
+export default function Logo({isMobile}) {
+
+    return (
+        <a 
+        href="index.html"
+        className="flex items-center gap-3">
+            <img
+                src="src/assets/images/logo.png"
+                alt="Logo da Joelma Matias - Soluções documentais"
+                className="h-[50px] w-[50px]"
+            />
+
+            { !isMobile ?
+                <h1 className="flex flex-col">
+                    <span className="text-[23px]">Joelma Matias</span>
+                    <span className="text-[13px]">Soluções Documentais</span>
+                </h1>
+            : "" }    
+        </a>
+    );
+    
+}
