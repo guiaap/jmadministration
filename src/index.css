@@ -18,6 +18,7 @@
     --drafts: #C8A97E;
     --details: #A47551;  
 
+    --blend-mode: #00000080;
     --transparent-white: #FFFFFF20;
     --text-shadow: 0px 0px 3px var(--base);
 

@@ -25,7 +25,7 @@ export default function Header() {
 
     return (
 
-        <header className="bg-(--secondary-text)">
+        <header className="w-full fixed top-0 bg-(--secondary-text)">
             <nav className="relative max-w-(--container) m-auto flex items-center justify-between p-2 text-(--primary-text)">
 
                 <Logo isMobile={isMobile} />
