@@ -25,8 +25,8 @@ export default function Header() {
 
     return (
 
-        <header className="w-full fixed top-0 bg-(--secondary-text)">
-            <nav className="relative max-w-(--container) m-auto flex items-center justify-between p-2 text-(--primary-text)">
+        <header className="w-full fixed top-0 bg-(--primary-900)">
+            <nav className="relative max-w-(--container-xl) m-auto flex items-center justify-between p-2 text-(--text-white)">
 
                 <Logo isMobile={isMobile} />
                 <Menu isOpen={open} setOpen={setOpen} isMobile={isMobile} />
@@ -42,11 +42,11 @@ export default function Header() {
                     href="https://wa.me/47991181188"
                     target="_blank"
                     id="whatsapp-header-button"
-                    className="flex items-center gap-2 p-2 border border-(--primary-text) rounded-md  transition-colors duration-300 hover:text-(--drafts) hover:border-(--drafts)
-                    [&>svg]:fill-(--primary-text) 
+                    className="flex items-center gap-2 p-2 border border-(--border-light) rounded-md  transition-colors duration-300 hover:text-(--primary-300) hover:border-(--primary-300)
+                    [&>svg]:fill-(--text-white) 
                     [&>svg]:transition-colors 
                     [&>svg]:duration-300 
-                    [&:hover>svg]:fill-(--drafts)
+                    [&:hover>svg]:fill-(--primary-300)
                     ">
                         <SortIcon iconName={"whatsapp"} height={"20px"} width={"20px"}  /> 
                         <span className="text-[1rem]">Vamos Conversar</span>     

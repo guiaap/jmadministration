@@ -1,4 +1,4 @@
-export default function TitleLine({height = "0.2rem", width="7rem", color="var(--base)"}) {
+export default function TitleLine({height = "0.2rem", width="7rem", color="var(--primary-300)"}) {
 
     return (
         <div 

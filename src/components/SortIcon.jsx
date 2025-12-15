@@ -1,5 +1,5 @@
 
-export default function SortIcon({iconName, height = "30px", width = "30px", fill = "var(--primary-text)"}) {
+export default function SortIcon({iconName, height = "30px", width = "30px", fill = "var(--text-white)"}) {
 
     switch(iconName) {
 
