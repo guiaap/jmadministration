@@ -8,14 +8,15 @@ export default function Menu({isOpen, isMobile, setOpen}) {
         flex bg-(--primary-900)
         [&>li>a]:block  
         [&>li>a]:p-1 
-        [&>li>a]:text-[1rem]
+        [&>li>a]:text-[clamp(0.9rem,1.5vw,1.1rem)]
         [&>li>a:hover]:text-(--primary-300) 
         [&>li>a:hover]:text-shadow-(--text-bright)
         [&>li>a:hover]:transition-colors
         [&>li>a:hover]:duration-300
 
             ${ isMobile ? `
-                absolute top-[66px] left-0 w-full flex-col 
+                absolute top-[61px] left-0 w-full flex-col 
+                transition-all duration-300
                 [&>li]:w-full 
                 [&>li]:border-b 
                 [&>li]:border-(--border-light)  
@@ -42,6 +43,7 @@ export default function Menu({isOpen, isMobile, setOpen}) {
             <li><a href="#hero-section" onClick={() => setOpen(false)} >Início</a></li>
             <li><a href="#about-section" onClick={() => setOpen(false)}>Sobre mim</a></li>
             <li><a href="#services-section" onClick={() => setOpen(false)}>Serviços</a></li>
+            <li><a href="#products-section" onClick={() => setOpen(false)}>Produtos</a></li>
             <li><a href="#blog-section" onClick={() => setOpen(false)}>Blog</a></li>
             <li><a href="#contact-section" onClick={() => setOpen(false)}>Contato</a></li>
         </ul>

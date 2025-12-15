@@ -11,7 +11,7 @@ export default function Header() {
     useEffect(() => {
 
         function checkScreenWidth() {
-            setIsMobile(window.innerWidth < 840);
+            setIsMobile(window.innerWidth < 900);
         }
 
         checkScreenWidth();
@@ -25,7 +25,7 @@ export default function Header() {
 
     return (
 
-        <header className="w-full fixed top-0 bg-(--primary-900)">
+        <header className="w-full fixed top-0 bg-(--primary-900) z-(--z-fixed)">
             <nav className="relative max-w-(--container-xl) m-auto flex items-center justify-between p-2 text-(--text-white)">
 
                 <Logo isMobile={isMobile} />
@@ -49,7 +49,7 @@ export default function Header() {
                     [&:hover>svg]:fill-(--primary-300)
                     ">
                         <SortIcon iconName={"whatsapp"} height={"20px"} width={"20px"}  /> 
-                        <span className="text-[1rem]">Vamos Conversar</span>     
+                        <span className="text-[clamp(0.9rem,1.5vw,1.1rem)]">Vamos Conversar</span>     
                     </a>
                  }
             </nav>

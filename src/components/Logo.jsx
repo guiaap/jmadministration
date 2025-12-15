@@ -5,7 +5,7 @@ export default function Logo({isMobile}) {
     return (
         <a 
         href="index.html"
-        className="flex items-center gap-3">
+        className="flex items-center gap-3 ">
             <img
                 src="src/assets/images/logo.png"
                 alt="Logo da Joelma Matias - Soluções documentais"
@@ -14,8 +14,8 @@ export default function Logo({isMobile}) {
 
             { !isMobile ?
                 <h1 className="flex flex-col">
-                    <span className="text-[1.4rem]">Joelma Matias</span>
-                    <span className="text-[0.8rem]">Soluções Documentais</span>
+                    <span className="text-[clamp(1.1rem,2vw,1.4rem)]">Joelma Matias</span>
+                    <span className="text-[clamp(0.8rem,1vw,1.1rem)]">Soluções Documentais</span>
                 </h1>
             : "" }    
         </a>
