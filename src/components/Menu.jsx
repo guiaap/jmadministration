@@ -5,7 +5,7 @@ export default function Menu({isOpen, isMobile, setOpen}) {
     return (
         <ul className={`  
 
-        flex bg-(--primary-900)
+        flex 
         [&>li>a]:block  
         [&>li>a]:p-1 
         [&>li>a]:text-[clamp(0.9rem,1.5vw,1.1rem)]
@@ -15,7 +15,7 @@ export default function Menu({isOpen, isMobile, setOpen}) {
         [&>li>a:hover]:duration-300
 
             ${ isMobile ? `
-                absolute top-[61px] left-0 w-full flex-col 
+                absolute top-[61px] left-0 w-full flex-col bg-(--primary-600)
                 transition-all duration-300
                 [&>li]:w-full 
                 [&>li]:border-b 

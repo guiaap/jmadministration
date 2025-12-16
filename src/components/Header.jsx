@@ -7,6 +7,7 @@ export default function Header() {
 
     const [isMobile, setIsMobile] = useState(false);
     const [open, setOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
 
@@ -23,9 +24,28 @@ export default function Header() {
         }
     }, []); 
 
+    useEffect(() => {
+
+        function checkScroll() {
+            setIsScrolled(window.scrollY > 100);
+        }
+
+        checkScroll();
+
+        window.addEventListener("scroll", checkScroll);
+
+        return () => {
+            window.removeEventListener("scroll", checkScroll);
+        }
+
+    }, []);
+
     return (
 
-        <header className="w-full fixed top-0 bg-(--primary-900) z-(--z-fixed)">
+        <header className={`w-full fixed top-0  z-(--z-fixed) transition-colors duration-300
+        ${ isScrolled && !isMobile ? "bg-[linear-gradient(to_bottom,var(--primary-900)_60%,var(--primary-600)_100%)]" : "bg-transparent" }
+        ${ isMobile ? "bg-[linear-gradient(to_bottom,var(--primary-900)_60%,var(--primary-600)_100%)]" : ""}
+        `}>
             <nav className="relative max-w-(--container-xl) m-auto flex items-center justify-between p-2 text-(--text-white)">
 
                 <Logo isMobile={isMobile} />
