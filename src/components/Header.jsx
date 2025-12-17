@@ -54,8 +54,8 @@ export default function Header() {
                 { isMobile ? 
                     <button onClick={() => setOpen(!open)}>
                         { open 
-                            ? <SortIcon iconName={"close"} /> 
-                            : <SortIcon iconName={"menu"} /> }
+                            ? <SortIcon name={"close"} /> 
+                            : <SortIcon name={"menu"} /> }
                     </button>
                     : 
                     <a 
@@ -68,7 +68,7 @@ export default function Header() {
                     [&>svg]:duration-300 
                     [&:hover>svg]:fill-(--primary-300)
                     ">
-                        <SortIcon iconName={"whatsapp"} height={"20px"} width={"20px"}  /> 
+                        <SortIcon name={"whatsapp"} height={"20px"} width={"20px"}  /> 
                         <span className="text-[clamp(0.9rem,1.5vw,1.1rem)]">Vamos Conversar</span>     
                     </a>
                  }

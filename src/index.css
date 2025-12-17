@@ -104,11 +104,6 @@
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  /* Specific transitions */
-  --transition-colors: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
-  --transition-transform: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  --transition-all: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   /* === BORDER RADIUS === */
   --radius-sm: 0.25rem;    /* 4px */
   --radius-md: 0.375rem;   /* 6px */
@@ -134,6 +129,7 @@
   --container-lg: 1024px;
   --container-xl: 1280px;
   --container-2xl: 1536px;
+  --container-max: 1800px;
 
   /* === Z-INDEX === */
   --z-dropdown: 1000;
